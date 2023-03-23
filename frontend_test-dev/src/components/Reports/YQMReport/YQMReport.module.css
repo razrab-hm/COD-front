@@ -1,0 +1,8 @@
+.quarter_title {
+    color: rgba(44, 56, 74, 0.95);
+    font-weight: bold;
+    background-color: rgba(220, 223, 227) !important;
+}
+  
+.table_striped tr:nth-child(even) { background-color: #d5f1de}
+.table_striped tr:nth-child(odd) { background-color: white}

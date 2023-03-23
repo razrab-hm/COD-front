@@ -1,0 +1,50 @@
+h1 {
+    margin: 0;
+}
+
+.username {
+    content: url('../../assets/icons/person.svg');
+}
+
+.email {
+    content: url('../../assets/icons/envelope-open.svg');
+}
+.first_name {
+    content: url('../../assets/icons/person-vcard.svg');
+}
+.last_name {
+    content: url('../../assets/icons/person-vcard.svg');
+}
+.description {
+    content: url('../../assets/icons/chat-dots.svg');
+}
+.password {
+    content: url('../../assets/icons/lock.svg');
+}
+
+.register_container{
+    width: 550px;
+    padding: 1.5rem;
+    margin: 15px auto;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.register_title {
+    font-size: 2.5rem;
+}
+
+.error {
+    margin: 0 , 0 5px, 0;
+    color: red;
+}
+
+.register_login {
+    display: inline-block;
+    margin-left: 270px;
+}
+.register_login a{
+    text-decoration: none;
+}

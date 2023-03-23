@@ -1,0 +1,22 @@
+.admin_main_aside {
+    width: 175px !important;
+}
+
+.admin_main_aside h4{
+    margin-bottom: 20px;
+}
+
+.people_icon {
+    content: url('../../assets/icons/people.svg');
+    margin: 0 5px 3px 0;
+}
+
+.companies_icon {
+    content: url('../../assets/icons/building-add.svg');
+    margin: 0 5px 3px 0;
+}
+
+.upload_icon {
+    content: url('../../assets/icons/file-earmark-arrow-up.svg');
+    margin: 0 5px 3px 0;
+}

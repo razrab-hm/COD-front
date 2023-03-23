@@ -1,0 +1,111 @@
+.company_info_container h4 {
+    margin: 15px 0 15px 0 !important;
+}
+
+.company_info_container span{
+    width: 150px ;
+}
+
+.company_info_btn_wrapper button{
+    margin: 10px 15px 0 0;
+}
+
+.company_info_users_wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.company_info_check_wrapper {
+    max-height: 230px;
+    box-sizing: border-box;
+    overflow: scroll;
+}
+
+.company_info_user_add {
+    padding: 4px 0 4px 5px !important;
+}
+
+.error {
+    margin: 0 , 0 5px, 0;
+    color: red;
+}
+
+.saving_notification {
+    margin-top: 10px;
+    color: #6C757D;
+}
+
+.search_icon {
+    content: url('../../../assets/icons/search.svg');
+}
+
+.add_icon_green {
+    content: url('../../../assets/icons/plus-circle_green.svg');
+    margin: 0 10px 2px 0;
+    cursor: pointer;
+}
+
+.add_icon {
+    content: url('../../../assets/icons/plus-circle.svg');
+    margin: 0 10px 4px 0;
+    cursor: pointer;
+}
+
+.delete_icon {
+    content: url('../../../assets/icons/x-circle.svg');
+    margin: 0 10px 2px 10px;
+    cursor: pointer;
+}
+
+.arrow_icon {
+    content: url('../../../assets/icons/arrow-left-circle-fill.svg');
+    margin: 0 5px 3px 0;
+}
+
+.question_icon {
+    content: url('../../../assets/icons/question-circle.svg');
+    margin: 0 0 3px 3px;
+}
+
+.question_xls {
+    content: url('../../../assets/images/xls_example.png');
+    position: absolute;
+    height: 300px;
+    bottom: 30px;
+    right: 90px;
+    border: 2px solid black;
+}
+
+.question_xls_hide {
+    display: none;
+}
+
+.company_info_delete_data {
+    display: flex;
+    flex-direction: column;
+}
+
+.company_info_delete_form {
+    display: flex;
+    flex-direction: row;
+}
+
+.company_info_delete_form > h5 {
+    align-self: end;
+    margin-right: 10px;
+}
+
+.company_info_delete_form > input {
+    max-width: 27%;
+    align-self: end;
+    margin-right: 1%;
+}
+
+.company_info_delete_form > input::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+  }
+
+.company_info_delete_form > button {
+    margin-left: auto;
+}

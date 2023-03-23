@@ -1,0 +1,29 @@
+.main_aside {
+    width: 150px !important;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+
+.main_aside_hide {
+    display: none;
+}
+
+.aside_refresh_btn {
+    width: 140px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    font-size: 13px !important;
+}
+
+.aside_filter_btn {
+    width: 100px;
+    height: 30px;
+    padding: 0 !important;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.refresh_icon {
+    content: url('../../assets/icons/arrow-clockwise.svg');
+    margin: 0 0 2px 3px;
+}

@@ -1,0 +1,9 @@
+table {
+    padding: 0 !important;
+}
+
+.main_test {
+    display: inline-block;
+    width: 50px;
+    height: 200px;
+}

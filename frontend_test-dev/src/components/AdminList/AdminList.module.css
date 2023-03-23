@@ -1,0 +1,49 @@
+.admin_user_btns_wrapper {
+    display: flex;
+}
+
+.search_icon {
+    content: url('../../assets/icons/search.svg');
+}
+
+.admin_list_add_btn {
+    margin: 0 0 10px 0;
+}
+
+.admin_list_plus {
+    content: url('../../assets/icons/plus-circle.svg');
+    margin: 0 5px 2px 0;
+}
+.admin_list_search_group {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.admin_list_header_wrapper {
+    display: flex;
+}
+.admin_list_header_wrapper button {
+    margin-left: 30px;
+}
+
+.admin_list_filter_container {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.admin_list_form {
+    display: flex;
+    align-items: center;
+} 
+
+.admin_list_form div {
+    margin-bottom: 0;
+}
+
+.admin_list_description {
+    margin-left: 30px;
+    color: grey;
+}

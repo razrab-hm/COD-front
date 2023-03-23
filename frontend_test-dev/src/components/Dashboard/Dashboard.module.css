@@ -1,0 +1,69 @@
+header {
+    background-color: #fff !important;
+    height: 40px !important;
+    border-bottom: 1px solid #d8dbe0;
+    position: sticky;
+    top: 0;
+    z-index: 1029;
+}
+
+nav {
+    padding: 0 !important;
+}
+
+.nav_list {
+    content: url('../../assets/icons/list.svg');
+}
+
+.nav_list_button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.nav_user_wrapper {
+    display: flex;
+    justify-content: flex-end;
+    color: rgba(44, 56, 74, 0.682);
+    align-items: center;
+}
+.nav_user_wrapper span{
+    margin-right: 10px;
+}
+
+.nav_user {
+    content: url('../../assets/icons/user.png');
+    width: 38px;
+    height: 38px;
+}
+
+.link_admin {
+    content: url('../../assets/icons/gear.svg');
+    margin-bottom: 2px;
+    margin-right: 10px;
+}
+
+.link_main {
+    content: url('../../assets/icons/clipboard.svg');
+    margin-bottom: 2px;
+    margin-right: 10px;
+}
+
+.logout {
+    content: url('../../assets/icons/logout.svg');
+    margin-bottom: 2px;
+    margin-right: 10px;
+}
+
+.aside_open {
+    content: url('../../assets/icons/arrow-double-start-svgrepo-com.svg');
+    margin-bottom: 2px;
+}
+
+.aside_close {
+    content: url('../../assets/icons/arrow-double-end-svgrepo-com.svg');
+    margin-bottom: 2px;
+}

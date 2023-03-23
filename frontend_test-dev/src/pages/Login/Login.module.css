@@ -1,0 +1,36 @@
+h1 {
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.username {
+    content: url('../../assets/icons/person.svg');
+}
+
+.password {
+    content: url('../../assets/icons/lock.svg');
+}
+
+.login_container {
+    width: 550px;
+    padding: 1.5rem;
+    margin: 50px auto;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.register_title {
+    font-size: 2.5rem;
+}
+
+.error {
+    margin: 0 , 0 5px, 0;
+    color: red;
+}
+
+.login_btn_wrrapper {
+    display: flex;
+    justify-content: space-between;
+}
