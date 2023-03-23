@@ -1,0 +1,14 @@
+.no_companies_wrapper {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.no_companies_link {
+    text-decoration: underline;
+    cursor: pointer;
+}

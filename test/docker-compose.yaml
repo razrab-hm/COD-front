@@ -1,0 +1,6 @@
+version: '3.7'
+services:
+  front_end:
+    image: datasleek/seismos
+    ports:
+      - "3001:3000"

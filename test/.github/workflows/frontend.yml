@@ -1,0 +1,41 @@
+# This is a basic workflow to help you get started with Actions
+
+name: frontend
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:
+    branches: [ "main" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+jobs:
+
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: docker build
+        run: docker build --tag ${{ secrets.DOCKER_LOGIN_FRONT }}/front:prod .
+
+      - name: docker login
+        run: docker login --username '${{ secrets.DOCKER_LOGIN_FRONT }}' --password '${{ secrets.DOCKER_PASSWORD_FRONT }}'
+
+      - name: docker push
+        run: docker push ${{ secrets.DOCKER_LOGIN_FRONT }}/front:prod
+
+      - name: executing remote ssh commands using password
+        uses: appleboy/ssh-action@v0.1.7
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          port: ${{ secrets.PORT }}
+          script: |
+            cd docker
+            docker rmi ${{ secrets.DOCKER_LOGIN_FRONT }}/front:prod --force
+            docker compose down
+            docker login --username '${{ secrets.DOCKER_LOGIN_FRONT }}' --password '${{ secrets.DOCKER_PASSWORD_FRONT }}'
+            docker compose up -d
+            docker system prune -a
